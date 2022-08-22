@@ -13,20 +13,21 @@ var questions = [
     }
 
     {
-        tile: '',
-        choices: [''],
-        answer: '',
+        tile: 'Arrays in JavaScripr can be used to store ...',
+        choices: ['numbers and strings', 'other arrays', 'booleans', 'all of the above'],
+        answer: 'all of the above',
     }
 
     {
-        tile: '',
+        tile: 'String values must be enclosed within ... when being assigned to the variables.',
         choices: [''],
-        answer: '',
+        answer: 'quotes',
     }
 
     {
-        tile: '',
-        choices: [''],
-        answer:
-    }
-]
+        tile: 'A very useful tool used during development and debugging for printing content to the debuggers is ...',
+        choices: ['JavaScript', 'Terminal/Bash', 'for loops', 'console log'],
+        answer:'console log',
+    },
+
+];
