@@ -36,5 +36,14 @@ function getQuestion(){
     titleEL.textContent = currentQuestion.title;
 
     //Remove previous question selection
+    questionsEl.setAttribute('class','hide');
 }
 
+//Update Timer
+function clockTick(){
+    timerEl.textContent= time;
+    if (time <= 0) {
+    quizEnd();
+    }
+}
+//Highscore Storage
