@@ -18,11 +18,23 @@ function startQuiz(){
     var startScreenEl = document.getElementById('start-screen');
     startScreenEl.attribute('class', 'hide');
 
-    // Unhide Questions
+    // Show Questions
     questionsEl.removeAttribute('class');
 
     // Begin Timer
-    
+    timerId = setInterval(clockTick, 1000);
 
+    getQuestion();
+
+}
+function getQuestion(){
+    // Obtain current question array
+    var currentQuestion = questions [currentQuestionIndex];
+
+    //Update title with current question selection
+    var titleEL = document.getElementById('question-title');
+    titleEL.textContent = currentQuestion.title;
+
+    //Remove previous question selection
 }
 
