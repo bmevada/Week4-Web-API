@@ -1,0 +1,86 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+}
+
+a {
+    color: rgb(100, 182, 154);
+    transition: color 0.3s;
+}
+
+a.hover {
+    color: blue;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    background-color: rgb(100, 182, 154);
+    border-radius: 5px;
+    padding: 2px 12px;
+    color: antiquewhite;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: rgb(118, 179, 159);
+}
+
+.choices button {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 100%;
+}
+
+ol {
+    padding-left: 5px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+li {
+    padding: 5px;
+    list-style: decimal;
+}
+
+li:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.start {
+    text-align: center;
+}
+
+.scores {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.feedback {
+    font-style: italic;
+    font-size: 100%;
+    color: cornflowerblue;
+    padding-top: 10px;
+    margin-top: 15px;
+    color: cornsilk;
+    border: solid 1px gray;
+}
+
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

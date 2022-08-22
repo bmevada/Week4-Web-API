@@ -78,7 +78,7 @@ function questionClick (event) {
      timerEl.textContent = time;
 
      feedbackEl.textContent = 'Incorrect Answer!';
-        } else {
+    } else {
     feedbackEl.textContent = 'Well done! Correct Answer!'
     }
 
