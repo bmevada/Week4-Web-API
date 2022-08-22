@@ -41,9 +41,18 @@ function getQuestion(){
 
 //Update Timer
 function clockTick(){
+    time--;
     timerEl.textContent= time;
     if (time <= 0) {
     quizEnd();
     }
 }
-//Highscore Storage
+
+//Highscore Storage - Enusre score value is not empty in local storage; add new score object; save to local storage; and then redirect the user to the next page
+
+function saveHighscore(){
+    var initials = initialsEl.value.trim();
+    if (initials !== '') {
+
+    }
+}
