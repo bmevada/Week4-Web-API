@@ -61,25 +61,24 @@ function questionClick (event) {
     var buttonEl = event.target;
 
     //If clicked answer is not a choice button, do nothing.
-    if (!buttonEl .matches('.choice')) {
+    if (!buttonEl.matches('.choice')) {
         return
     }
     
     //If answer is incorrect - deduct 15 seconds
     if (buttonEl.value !== questions[currentQuestionIndex].answer) {
         time -=15;
-    }
-
-     if (time < 0) {
-         time = 0;
-     }
-    
+        if (time < 0) {
+            time = 0;
+   
+        }
         //Update timer
-     timerEl.textContent = time;
+        timerEl.textContent = time;
+        feedbackEl.textContent = 'Incorrect Answer!';
 
-     feedbackEl.textContent = 'Incorrect Answer!';
+
     } else {
-    feedbackEl.textContent = 'Well done! Correct Answer!'
+        feedbackEl.textContent = 'Well done! Correct Answer!';
     }
 
    //Highlight correct/incorrect answer on page
@@ -92,12 +91,12 @@ function questionClick (event) {
     currentQuestionIndex++;
 
     //Check for additional questions
-    if (time <= 0 || currentQuestionIndex === questions.length) {
+        if (time <= 0 || currentQuestionIndex === questions.length) {
     quizEnd();
-    } else {
+        } else {
         getQuestion();
     }
-
+}
 
 function quizEnd ()
     //Stop timer
@@ -124,7 +123,7 @@ function clockTick(){
     }
 }
 
-//Highscore Storage - Enusre score value is not empty in local storage; add new score object; save to local storage; and then redirect the user to the next page
+//Highscore Storage - Ensure score value is not empty in local storage; add new score object; save to local storage; and then redirect the user to the next page
 
 function saveHighscore(){
     var initials = initialsEl.value.trim();
