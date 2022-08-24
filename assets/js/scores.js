@@ -2,20 +2,19 @@
 function printHighscores (){
     var highscores = JSON.parse(window.localStorage.getItem('highscores')) || [];
 
-}
+    console.log()
 
-//Rank scores in descending order - high scores shows on top
-highscores.sort(function (a, b) {
-    return b.score = a.score
-});
+    //Rank scores in descending order - high scores shows on top
+    highscores.sort((a, b) => b.score - a.score);
 
-for (var i = 0; i ,highscore.length; i += 1) {
-    var liTag = document.createElement('li');
-    liTag.textContent = highscore[i].initials + ' - ' + highscores[i].score
+    for (var i = 0; i <highscores.length; i += 1) {
+        var liTag = document.createElement('li');
+        liTag.textContent = highscores[i].initials + ' - ' + highscores[i].score
 
-    //View scores
-    var olEl =document.getElementById ('highscores');
-    olEl.appendChild (liTag);
+        //View scores
+        var olEl =document.getElementById ('highscores');
+        olEl.appendChild (liTag);
+    }
 }
 
 function clearHighscores() {
