@@ -1,4 +1,4 @@
-// Add List of all questions, choice and answers
+// Add List of all questions, choices and answers
 var questions = [
     {
         title: 'Commonly used data types DO NOT inlcude',

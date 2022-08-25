@@ -9,7 +9,7 @@ a {
 }
 
 a.hover {
-    color: blue;
+    color: rgb(33, 49, 199);
     font-weight: 300;
 }
 
@@ -73,7 +73,7 @@ li:nth-child(odd) {
 .feedback {
     font-style: italic;
     font-size: 100%;
-    background-color: rgb(173, 181, 196);
+    background-color: rgb(134, 152, 185);
     padding-top: 10px;
     margin-top: 15px;
     color: blue;
