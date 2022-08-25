@@ -98,7 +98,7 @@ function questionClick(event) {
     feedbackEl.setAttribute('class', 'feedback');
     setTimeout(function () {
         feedbackEl.setAttribute('class', 'feedback hide');
-    }, 3000);
+    }, 90000);
 
     //Next Question
     currentQuestionIndex++;
