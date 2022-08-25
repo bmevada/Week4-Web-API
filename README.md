@@ -12,6 +12,16 @@ This coding challenge invites the user to a timed coding quiz, which runs in the
 
 [Link to Github] https://github.com/bmevada/Week4-Web-API.git
 
+
+The JavaScript structure is broken down into three elements: logic; data; and graphic, to allow the codes to be more visual to the reader when inspecting the code.
+
+The three elements are broken down as follows:
+1. The logic.js provides the function to start the quiz, i.e. this is a tigger event for the user clickable event as they progress through the quiz; 
+
+2. The data - questions.js which includes question array - string of questions, choice and answers; and 
+
+3. The graphic element, i.e. highscores, the outcome at the end of the quiz. 
+
 Overall, the code is clean, polished, and responsive user interface.
 
 ## User Story
