@@ -21,7 +21,7 @@ button {
     border-radius: 5px;
     padding: 2px 12px;
     color: rgb(17, 15, 13);
-    transition: background-color 0.8s;
+    transition: background-color 0.4s;
 }
 
 button:hover {
